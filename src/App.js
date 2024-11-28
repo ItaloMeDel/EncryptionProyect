@@ -5,8 +5,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import ExamplesMessagingWeb from "./pages/ExamplesMessagingWeb";
 import ExamplesGalleryWeb from "./pages/ExamplesGalleryWeb";
+import ExamplesMessagingWeb from "./pages/ExamplesMessagingWeb";
 
 function App() {
   const action = useNavigationType();
@@ -28,7 +28,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/examplesgalleryweb":
+      case "/examplesmessagingweb":
         title = "";
         metaDescription = "";
         break;
@@ -50,8 +50,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ExamplesMessagingWeb />} />
-      <Route path="/examplesgalleryweb" element={<ExamplesGalleryWeb />} />
+      <Route path="/" element={<ExamplesGalleryWeb />} />
+      <Route path="/examplesmessagingweb" element={<ExamplesMessagingWeb />} />
     </Routes>
   );
 }
